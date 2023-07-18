@@ -2,12 +2,10 @@
 export type BuildMode = 'production' | 'development'
 
 export interface BuildPaths {
-  // до точки входа
-  entry: string
-  // до папки со сборкой
-  build: string
-  // до index.html 
-  html: string
+  entry: string    // до точки входа
+  build: string    // до папки со сборкой
+  html: string     // до index.html
+  src: string      // путь до папки src для alias modules
 }
 
 export interface BuildEnv {
